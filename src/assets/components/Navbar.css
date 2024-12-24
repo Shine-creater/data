@@ -1,0 +1,51 @@
+
+
+.navbar {
+    background-color: #333;  /* Dark background for navbar */
+    padding: 15px;  /* Padding around the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Small shadow under the navbar */
+  }
+  
+  /* Navbar content container */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;  /* Space between brand and nav items */
+    align-items: center;  /* Vertically center the items */
+    max-width: 1200px;
+    margin: 0 auto;  /* Center the navbar within the screen */
+  }
+  
+  /* Brand text */
+  .navbar-brand {
+    color: white;  /* White color for the brand */
+    font-size: 24px;  /* Larger font size for brand name */
+    font-weight: bold;  /* Bold font weight */
+    text-decoration: none;  /* Remove underline from the brand */
+    letter-spacing: 1px;  /* Slight letter spacing for a clean look */
+  }
+  
+  /* Navbar links container */
+  .navbar-links {
+    list-style: none;  /* Remove bullet points from list */
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Align links in a row */
+  }
+  
+  /* Individual navbar links */
+  .navbar-link {
+    color: white;  /* White text color for links */
+    text-decoration: none;  /* Remove underline from links */
+    padding: 8px 15px;  /* Space around the link text */
+    font-size: 18px;  /* Set font size */
+    margin-left: 15px;  /* Space between links */
+    border-radius: 5px;  /* Rounded corners */
+    transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect on links */
+  .navbar-link:hover {
+    background-color: #555;  /* Darker background on hover */
+    color: #fff;  /* Keep text color white */
+  }
+  

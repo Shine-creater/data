@@ -1,0 +1,111 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 20px; /* Padding to give some space inside */
+    position: sticky; /* Makes the navbar stay on top when scrolling */
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Container for navbar items */
+.navbar-container {
+    display: flex; /* Apply Flexbox for layout */
+    justify-content: space-between; /* Space between the logo and links */
+    align-items: center; /* Vertically align items */
+    max-width: 1200px; /* Limit the width */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Logo or brand styling */
+.navbar-brand {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navbar links list */
+.navbar-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Align links horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual navbar links */
+.navbar-link {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px;
+    margin: 0 10px; /* Space between links */
+    font-size: 18px;
+    transition: background-color 0.3s; /* Smooth background color change on hover */
+}
+
+/* Hover effect for links */
+.navbar-link:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Responsive Design for mobile screens */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar-links {
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .navbar-link {
+        padding: 10px;
+        margin: 5px 0; /* Reduce space between links */
+    }
+}
+/* Main container to hold all user boxes */
+.user-box-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap the boxes to new lines if needed */
+    gap: 20px; /* Space between boxes */
+    margin-top: 20px;
+}
+
+/* Each individual user box */
+.user-box {
+    background-color: #f4f4f4; /* Light background color */
+    border: 1px solid black; /* Black border around each box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Add some space inside the box */
+    width: 250px; /* Fixed width */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Label styling inside each user box */
+.user-box label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px; /* Space between labels */
+    color: #333; /* Dark text color */
+}
+
+/* Optional styling for the name, email, and age labels */
+.name, .email, .age {
+    font-weight: bold;
+    color: #007bff; /* Blue color for labels */
+}
+
+/* Adjustments for smaller screens (mobile responsiveness) */
+@media (max-width: 768px) {
+    .user-box {
+        width: 100%; /* Take full width on small screens */
+        margin-bottom: 20px; /* Add margin between boxes on mobile */
+    }
+}
+
+.cur{
+    cursor: pointer;
+}
